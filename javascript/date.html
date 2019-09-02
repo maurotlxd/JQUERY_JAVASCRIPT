@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+	var complete = new Date();
+	var year = complete.getFullYear();
+	var month = complete.getMonth()  + 1;
+	var day = complete.getDate();
+
+	var date_complete = year + "-" + month + "-" + day;
+
+	var fecha_array = date_complete.split("-");
+	var fecha_slash = fecha_array[0] + "/" + fecha_array[1] + "/" + fecha_array[2]
+	fecha_slash = new Date(fecha_slash);
+
+	fecha_slash.setDate(fecha_slash.getDate() - 1);
+
+	var year2 = fecha_slash.getFullYear();
+	var month2 = fecha_slash.getMonth()  + 1;
+	var day2 = fecha_slash.getDate();
+
+	mes = month2 < 10 ? ("0" + month2) : month2;
+	dia = day2 < 10 ? ("0" + day2) : day2;
+
+	console.log(year2 + "-" + mes + "-" + dia)
+
+	
+
+</script>
+</body>
+</html>

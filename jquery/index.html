@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<style type="text/css">
+	.red{
+		background-color: red;
+	}
+	.green{
+		background-color: green;
+	}
+	.blue{
+		background-color: blue;
+	}
+	.cuadrado{
+		width: 100px;
+		height: 100px;
+		position: relative;
+		
+	}
+	.yellow{
+		background-color: yellow;
+	}
+	html{
+		width: 2000px;
+		height: 1500px;
+	}
+	.subir{
+		position: fixed;
+		border-radius: 50%;
+		background-color: red;
+		height: 60px;
+		width: 60px;
+		border: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		right: 0px;
+		bottom: 0px;
+		display: none;
+		cursor: pointer;
+	}
+</style>
+
+<input type="button" value="TOGGLE" id="boton">
+<input type="button" value="HIDE" id="boton1">
+<input type="button" value="SHOW" id="boton2">
+<input type="button" value="FADEIN" id="boton3">
+<input type="button" value="FADEOUT" id="boton4">
+<input type="button" value="FADETO" id="boton5">
+<input type="button" value="ANIMATE" id="boton6">
+<input type="button" value="HTML" id="boton7">
+<input type="button" value="APPEND" id="boton8">
+<input type="button" value="PREPEND" id="boton9">
+<input type="button" value="BEFORE" id="boton10">
+<input type="button" value="AFTER" id="boton11">
+<input type="button" value="CSS" id="boton12">
+<input type="button" value="CLICK_MOUSEOVER_MOUSEOUT" id="boton13">
+<div id="data">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas atque repellendus autem, corporis dolores sint dicta animi delectus sunt aspernatur illo, consectetur, repudiandae dignissimos assumenda, impedit a vitae fugiat iste.</p>
+	
+</div>
+<input type="text" id="campo">
+<div class="cuadrado yellow"></div>
+
+
+<button class="subir">subir</button>
+
+<div class="padre">
+	<div class="hijo1">
+		
+	</div>
+	<div class="hijo2">
+		<button name="btn1" id="btn1">BTN1</button>
+		<button name="btn2" id="btn2">BTN2</button>
+		<button name="btn3" id="btn3">BTN3</button>
+		<p>Parrafo</p>
+	</div>
+	<div class="hijo3">
+		
+	</div>
+	
+</div>
+
+
+<input type="text" class="campo" value="1">
+<input type="text" class="campo" value="2">
+<input type="text" class="campo" value="3">
+<input type="text" class="campo" value="4">
+
+<input type="file" name="archivo" id="archivo">
+<input type="file" name="archivo2" id="archivo2">
+<input type="file" name="archivo3" id="archivo3">
+<br>
+<label for="">Opcion uno</label>
+<input type="checkbox" name="uno" id="uno">
+<label for="">Opcion dos</label>
+<input type="checkbox" name="dos" id="dos">
+<label for="">Opcion tres</label>
+<input type="checkbox" name="tres" id="tres">
+<button id="seleccion_elementos">SELECCION</button>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
